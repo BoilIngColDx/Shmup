@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ai6YIJ5k/MB/N9myDgwdhOubCNsxUn3D1LPBHKhbjXBv+b6tJ2m2ssnI410NCWaxuwRTL7uB678Mqys7yFXlCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Liam\\source\\repos\\Shmup\\Shmup\\Shmup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Liam\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Liam\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
