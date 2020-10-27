@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/liam/Documents/GitHub/Shmup/Content/saucer.png</SourceFile>
-  <SourceTime>2020-10-27T14:53:37.1753806+00:00</SourceTime>
-  <DestFile>/Users/liam/Documents/GitHub/Shmup/Content/bin/DesktopGL/Content/saucer.xnb</DestFile>
-  <DestTime>2020-10-27T14:58:40.3212053+00:00</DestTime>
+  <SourceFile>C:/Users/Liam/source/repos/Shmup/Shmup/Content/saucer.png</SourceFile>
+  <SourceTime>2018-09-24T08:50:06+01:00</SourceTime>
+  <DestFile>C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/saucer.xnb</DestFile>
+  <DestTime>2020-10-27T15:38:39.5029174+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

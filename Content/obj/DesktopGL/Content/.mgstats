@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/liam/Documents/GitHub/Shmup/Content/background.png","/Users/liam/Documents/GitHub/Shmup/Content/bin/DesktopGL/Content/background.xnb","TextureProcessor","Texture2DContent",445299,1440085,0.180629
-"/Users/liam/Documents/GitHub/Shmup/Content/missile.png","/Users/liam/Documents/GitHub/Shmup/Content/bin/DesktopGL/Content/missile.xnb","TextureProcessor","Texture2DContent",22084,32853,0.003962
-"/Users/liam/Documents/GitHub/Shmup/Content/saucer.png","/Users/liam/Documents/GitHub/Shmup/Content/bin/DesktopGL/Content/saucer.xnb","TextureProcessor","Texture2DContent",31236,32853,0.002308
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/background.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/background.xnb","TextureProcessor","Texture2DContent",445299,1440085,0.2460346
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/missile.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/missile.xnb","TextureProcessor","Texture2DContent",22084,32853,0.0043158
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/saucer.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/saucer.xnb","TextureProcessor","Texture2DContent",31236,32853,0.0037679
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/UIFont.spritefont","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,37922,0.1950454

@@ -5,8 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-//Collision detection (simple)
-// player lives
+//simple collision detection
+//player lives
 //counter
 //ui (font, imported
 
@@ -24,6 +24,7 @@ namespace Shmup
         Sprite backgroundSprite;
         PlayerSprite playerSprite;
         List<MissileSprite> missiles = new List<MissileSprite>();
+        SpriteFont uiFont;
 
         public Game1()
         {
@@ -48,6 +49,7 @@ namespace Shmup
             saucerTxr = Content.Load<Texture2D>("saucer");
             missileTxr = Content.Load<Texture2D>("missile");
             backgroundTxr = Content.Load<Texture2D>("background");
+            uiFont = Content.Load<SpriteFont>("UIFont");
 
             backgroundSprite = new Sprite(backgroundTxr, new Vector2(0, 0));
             playerSprite = new PlayerSprite(saucerTxr, new Vector2(screenSize.X/6, screenSize.Y/2));
@@ -88,6 +90,8 @@ namespace Shmup
             playerSprite.Draw(_spriteBatch);
             
             foreach(MissileSprite missile in missiles) missile.Draw(_spriteBatch);
+
+            _spriteBatch.DrawString(uiFont, "this is a TEST!", new Vector2(10, 10), Color.White);
 
             _spriteBatch.End();
 
