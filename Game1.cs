@@ -1,6 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
+
+
+//Add a Missle class, as a child of Sprite class
+//Use List<Missles> to reference multiple missles and iterate over them
 
 namespace Shmup
 {
@@ -14,6 +20,7 @@ namespace Shmup
 
         Sprite backgroundSprite;
         PlayerSprite playerSprite;
+        List<MissileSprite> missiles = new List<MissileSprite>();
 
         public Game1()
         {
@@ -41,16 +48,25 @@ namespace Shmup
 
             backgroundSprite = new Sprite(backgroundTxr, new Vector2(0, 0));
             playerSprite = new PlayerSprite(saucerTxr, new Vector2(screenSize.X/6, screenSize.Y/2));
+            
         }
 
         protected override void Update(GameTime gameTime)
         {
+            Random rng = new Random();
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            if (missiles.Count < 5) missiles.Add(new MissileSprite(missileTxr, new Vector2(screenSize.X, rng.Next(0, (screenSize.Y - missileTxr.Height)))));
+
             playerSprite.Update(gameTime, screenSize);
+            foreach (MissileSprite missile in missiles) missile.Update(gameTime, screenSize);
+
+            missiles.RemoveAll(missile => missile.dead);
 
             base.Update(gameTime);
+
+            //Debug.WriteLine(missiles.Count);
         }
 
         protected override void Draw(GameTime gameTime)
@@ -60,6 +76,9 @@ namespace Shmup
             _spriteBatch.Begin();
             backgroundSprite.Draw(_spriteBatch);
             playerSprite.Draw(_spriteBatch);
+            
+            foreach(MissileSprite missile in missiles) missile.Draw(_spriteBatch);
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
