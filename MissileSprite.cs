@@ -7,7 +7,7 @@ namespace Shmup
 {
     class MissileSprite : Sprite
     {
-        float missileSpeed = 2;
+        float missileSpeed = 5;
         public bool dead = false;
 
         public MissileSprite(Texture2D newTxr, Vector2 newPos) : base(newTxr, newPos) { }

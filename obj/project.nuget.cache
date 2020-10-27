@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rcFlnjcvAmxG5aKAq1f9jAoB7NbpIMGhS7nmTVbJPTqPTsZbClwZwR16JfygtDwsRonqA+7UUWrz8yVaqcywWg==",
+  "dgSpecHash": "0JCYducNqh7Zfcn9LXRulM0Kz/tZCEhv4o5b6YwVGeu560w+o4OBUU3V8a74lLmu1294h9h52C271b+lTNGUDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Liam\\source\\repos\\Shmup\\Shmup\\Shmup.csproj",
+  "projectFilePath": "/Users/liam/Documents/GitHub/Shmup/Shmup.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Liam\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\Liam\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    "/Users/liam/.nuget/packages/monogame.content.builder.task/3.8.0.1641/monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "/Users/liam/.nuget/packages/monogame.framework.desktopgl/3.8.0.1641/monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
   ],
   "logs": []
 }

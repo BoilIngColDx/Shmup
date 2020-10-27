@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Liam/source/repos/Shmup/Shmup/Content/background.png</SourceFile>
-  <SourceTime>2020-10-15T10:32:45.2652107+01:00</SourceTime>
-  <DestFile>C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/Content/background.xnb</DestFile>
-  <DestTime>2020-10-15T10:33:40.9232275+01:00</DestTime>
+  <SourceFile>/Users/liam/Documents/GitHub/Shmup/Content/background.png</SourceFile>
+  <SourceTime>2020-10-27T14:53:37.157407+00:00</SourceTime>
+  <DestFile>/Users/liam/Documents/GitHub/Shmup/Content/bin/DesktopGL/Content/background.xnb</DestFile>
+  <DestTime>2020-10-27T14:58:40.3054192+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

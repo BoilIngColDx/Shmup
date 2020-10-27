@@ -3,10 +3,12 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
-
-//Add a Missle class, as a child of Sprite class
-//Use List<Missles> to reference multiple missles and iterate over them
+//Collision detection (simple)
+// player lives
+//counter
+//ui (font, imported
 
 namespace Shmup
 {
@@ -17,6 +19,7 @@ namespace Shmup
 
         Texture2D saucerTxr, missileTxr, backgroundTxr;
         Point screenSize = new Point(800, 450);
+        float spawnCooldown = 2;
 
         Sprite backgroundSprite;
         PlayerSprite playerSprite;
@@ -57,8 +60,15 @@ namespace Shmup
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            if (missiles.Count < 5) missiles.Add(new MissileSprite(missileTxr, new Vector2(screenSize.X, rng.Next(0, (screenSize.Y - missileTxr.Height)))));
-
+            if (spawnCooldown > 0)
+            {
+                spawnCooldown -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
+            else if (missiles.Count < 5)
+            {
+                missiles.Add(new MissileSprite(missileTxr, new Vector2(screenSize.X, rng.Next(0, (screenSize.Y - missileTxr.Height)))));
+                spawnCooldown = (float)(rng.NextDouble() + 0.5);
+            }
             playerSprite.Update(gameTime, screenSize);
             foreach (MissileSprite missile in missiles) missile.Update(gameTime, screenSize);
 

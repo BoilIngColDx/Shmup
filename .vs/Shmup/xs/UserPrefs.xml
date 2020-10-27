@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{C8AA7247-4EFB-4D0F-BCCC-09232239C26A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MissileSprite.cs">
+    <Files>
+      <File FileName="Game1.cs" Line="67" Column="64" />
+      <File FileName="MissileSprite.cs" Line="21" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Shmup" expanded="True">
+            <Node name="Shmup" expanded="True">
+              <Node name="MissileSprite.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Shmup PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
