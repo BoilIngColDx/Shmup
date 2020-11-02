@@ -51,3 +51,4 @@ C:\Users\Liam\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.pdb
 C:\Users\Liam\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimeconfig.cache
 C:\Users\Liam\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.csprojAssemblyReference.cache
 C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
+C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
