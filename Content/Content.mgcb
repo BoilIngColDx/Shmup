@@ -32,6 +32,12 @@
 /processorParam:TextureFormat=Compressed
 /build:BigFont.spritefont
 
+#begin missile explosion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:missile explosion.wav
+
 #begin missile.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -67,6 +73,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:saucer.png
+
+#begin ufo explosion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:ufo explosion.wav
 
 #begin UIFont.spritefont
 /importer:FontDescriptionImporter

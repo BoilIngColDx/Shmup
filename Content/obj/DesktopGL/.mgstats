@@ -1,7 +1,9 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/background.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",445299,1440085,0.2822244
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/BigFont.spritefont","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/BigFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,267281,0.3258719
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/missile.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/missile.xnb","TextureProcessor","Texture2DContent",22084,32853,0.0119035
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/particle.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/particle.xnb","TextureProcessor","Texture2DContent",2405,16469,0.2688315
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/saucer.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/saucer.xnb","TextureProcessor","Texture2DContent",31236,32853,0.0109117
-"C:/Users/Liam/source/repos/Shmup/Shmup/Content/UIFont.spritefont","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,37905,0.0302561
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/background.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",445299,1440085,0.3526561
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/BigFont.spritefont","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/BigFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,267281,0.2236959
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/missile explosion.wav","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/missile explosion.xnb","SoundEffectProcessor","SoundEffectContent",56064,56125,0.7395347
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/missile.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/missile.xnb","TextureProcessor","Texture2DContent",22084,32853,0.0143847
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/particle.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/particle.xnb","TextureProcessor","Texture2DContent",2405,16469,0.015376
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/saucer.png","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/saucer.xnb","TextureProcessor","Texture2DContent",31236,32853,0.0128961
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/ufo explosion.wav","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/ufo explosion.xnb","SoundEffectProcessor","SoundEffectContent",18622,13293,0.1195352
+"C:/Users/Liam/source/repos/Shmup/Shmup/Content/UIFont.spritefont","C:/Users/Liam/source/repos/Shmup/Shmup/Content/bin/DesktopGL/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",2011,37905,0.0297594

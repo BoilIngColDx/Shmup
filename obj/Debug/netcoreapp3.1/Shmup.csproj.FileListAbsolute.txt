@@ -52,3 +52,5 @@ C:\Users\Liam\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimec
 C:\Users\Liam\source\repos\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.csprojAssemblyReference.cache
 C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
 C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
+C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\missile explosion.xnb
+C:\Users\Liam\source\repos\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\ufo explosion.xnb

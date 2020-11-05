@@ -1,14 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-//simple collision detection
-//player lives / death
-//counter
-//ui (font, imported)
+//bigger particles
+//particles on player death
+//sound
+//missile acceleration
+//progression / timer
 
 namespace Shmup
 {
@@ -20,12 +22,13 @@ namespace Shmup
         Texture2D saucerTxr, missileTxr, backgroundTxr, particleTxr;
         Point screenSize = new Point(800, 450);
         float spawnCooldown = 2;
-
+        float playTime = 0;
         Sprite backgroundSprite;
         PlayerSprite playerSprite;
         List<MissileSprite> missiles = new List<MissileSprite>();
         List<ParticleSprite> particleList = new List<ParticleSprite>();
         SpriteFont uiFont, bigFont;
+        SoundEffect shipExplodeSnd, missileExplodeSnd;
 
 
         public Game1()
@@ -54,6 +57,8 @@ namespace Shmup
             particleTxr = Content.Load<Texture2D>("particle");
             uiFont = Content.Load<SpriteFont>("UIFont");
             bigFont = Content.Load<SpriteFont>("BigFont");
+            shipExplodeSnd = Content.Load<SoundEffect>("ufo Explosion");
+            missileExplodeSnd = Content.Load<SoundEffect>("missile explosion");
 
             backgroundSprite = new Sprite(backgroundTxr, new Vector2(0, 0));
             playerSprite = new PlayerSprite(saucerTxr, new Vector2(screenSize.X/6, screenSize.Y/2));
@@ -70,13 +75,23 @@ namespace Shmup
             {
                 spawnCooldown -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            else if (playerSprite.playerLives > 0 && missiles.Count < 5)
+            else if (playerSprite.playerLives > 0 && missiles.Count < (Math.Min(playTime, 120f) / 120f) * 8 + 2)
             {
-                missiles.Add(new MissileSprite(missileTxr, new Vector2(screenSize.X, rng.Next(0, (screenSize.Y - missileTxr.Height)))));
+                missiles.Add(new MissileSprite(
+                    missileTxr,
+                    new Vector2(
+                        screenSize.X,
+                        rng.Next(0, (screenSize.Y - missileTxr.Height))),
+                    (Math.Min(playTime, 120f)/120f) * 20000f + 200f
+                    ));
                 spawnCooldown = (float)(rng.NextDouble() + 0.5);
             }
 
-            if (playerSprite.playerLives > 0) playerSprite.Update(gameTime, screenSize);
+            if (playerSprite.playerLives > 0)
+            {
+                playerSprite.Update(gameTime, screenSize);
+                playTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
 
             foreach (MissileSprite missile in missiles)
             {
@@ -94,6 +109,18 @@ namespace Shmup
 
                     missile.dead = true;
                     playerSprite.playerLives--;
+                    missileExplodeSnd.Play();
+                    if(playerSprite.playerLives <= 0)
+                    {
+                        for (int i = 0; i < 32; i++) particleList.Add(
+                            new ParticleSprite(particleTxr,
+                            new Vector2(
+                                playerSprite.spritePos.X + (missileTxr.Width / 2) - (particleTxr.Width / 2),
+                                playerSprite.spritePos.Y + (missileTxr.Height / 2) - (particleTxr.Height / 2)
+                                )
+                         ));
+                        shipExplodeSnd.Play();
+                    }
                 }
             }
 
@@ -120,7 +147,28 @@ namespace Shmup
             _spriteBatch.DrawString(
                 uiFont,
                 "Lives:   " + playerSprite.playerLives,
+                new Vector2(14, 14),
+                Color.Black
+                );
+
+            _spriteBatch.DrawString(
+                uiFont,
+                "Lives:   " + playerSprite.playerLives,
                 new Vector2(10, 10),
+                Color.White
+                );
+
+            _spriteBatch.DrawString(
+                uiFont,
+                "Time:   " + Math.Round(playTime),
+                new Vector2(14, 44),
+                Color.Black
+                );
+
+            _spriteBatch.DrawString(
+                uiFont,
+                "Time:   " + Math.Round(playTime),
+                new Vector2(10, 40),
                 Color.White
                 );
 
